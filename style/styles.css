@@ -190,16 +190,31 @@ footer .sociales i {
   color: #edf0f1;
 }
 .text {
+  width: 100%;
   position: absolute;
   top: 50%;
-  left: 12%;
-  font-size: 20px;
-  color: aliceblue;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 15px;
-  line-height: 2;
-  letter-spacing: 2px;
   text-transform: uppercase;
+}
+.text h1 {
+  font-size: 70px;
+  margin-top: 80px;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+}
+.text p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  padding-top: 20px;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
 }
 .pie h3 {
   color: #edf0f1;
@@ -209,6 +224,14 @@ footer .sociales i {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -392,7 +415,7 @@ footer .sociales i {
     position: absolute;
     top: 30%;
     left: 0%;
-    font-size: 12px;
+    font-size: 6px;
     color: aliceblue;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
@@ -400,8 +423,31 @@ footer .sociales i {
     letter-spacing: 2px;
     text-transform: uppercase;
   }
+  .text h1 {
+    font-size: 20px;
+    margin-top: 20px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+  }
+  .text p {
+    font-size: 10px;
+    margin: 20px auto;
+    padding-top: 20px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+  }
   .pie h3 {
     color: #edf0f1;
     display: inline-block;
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
